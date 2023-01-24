@@ -5,11 +5,11 @@
 class Square:
     """define a Square."""
 
-    def _str_(self):
+    def __str__(self):
         """teach python to print the square my way"""
         return self.pos_print()[:-1]
 
-    def _init_(self, size=0, position=(0, 0)):
+    def __init__(self, size=0, position=(0, 0)):
         """ initialize the square with this
         Args:
             size: a side of square
@@ -73,7 +73,7 @@ class Square:
         Returns:
             size * size
         """
-        return self._size * self._size
+        return self.__size * self.__size
 
     def pos_print(self):
         """returns the printed square with position"""
