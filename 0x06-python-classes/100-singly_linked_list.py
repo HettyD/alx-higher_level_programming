@@ -6,7 +6,7 @@
 class Node:
     """Represent a node in a singly-linked list."""
 
-    def _init_(self, data, next_node=None):
+    def __init__(self, data, next_node=None):
         """Initialize a new Node.
 
         Args:
@@ -42,7 +42,7 @@ class Node:
 class SinglyLinkedList:
     """Represent a singly-linked list."""
 
-    def _init_(self):
+    def __init__(self):
         """Initalize a new SinglyLinkedList."""
         self.__head = None
 
@@ -70,10 +70,10 @@ class SinglyLinkedList:
             new.next_node = tmp.next_node
             tmp.next_node = new
 
-    def _str_(self):
+    def __str__(self):
         """Define the print() representation of a SinglyLinkedList."""
-	values = []
-	tmp = self.__head
+        values = []
+        tmp = self.__head
         while tmp is not None:
             values.append(str(tmp.data))
             tmp = tmp.next_node
