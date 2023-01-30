@@ -7,7 +7,7 @@ on an nxn grid such that they are all in non-attacking positions
 
 from sys import argv
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     a = []
     if len(argv) != 2:
         print("Usage: nqueens N")
